@@ -11,13 +11,11 @@ import News from "./component/News";
 import Logo from "./component/Logo";
 import Intro from "./component/Intro";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NotFound from "./component/pages/Notfound";
+import NotFound from "./component/pages/NotFound";
 
 import { FcAbout } from "react-icons/fc";
 import About from "./component/pages/About";
 import Contact from "./component/pages/Contact";
-
-
 
 const App = () => {
   return (
@@ -45,12 +43,12 @@ const App = () => {
             />
 
             <Route path="/shop" element={<Product />} />
-           
-            <Route path="*" element={<NotFound/>} />
-            <Route path="/blogs" element={<News/>} />
+
+            <Route path="*" element={<NotFound />} />
+            <Route path="/blogs" element={<News />} />
             <Route path="/about" element={<About />} />
             <Route path="/blogs" element={<News />} />
-            <Route path="/contact-us" element={<Contact/>} />
+            <Route path="/contact-us" element={<Contact />} />
           </Routes>
         </div>
 
