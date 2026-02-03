@@ -1,17 +1,17 @@
 1. Create and account in github.
    to check git : git --version
 2. Install the git
-3. Create Repository/Folder in hgithub by clicking new .
+3. Create Repository/Folder in github by clicking new .
 4.identiy gith user to vs code like this :
 
     git config --global user.name "tofuuuuu0912-stack"
-    git config --global user.email "tofuuuuu0912@gmail.com" 
+      
 
 
 5. git init 
-5. git add .
+6. git add .
 7. git commit -m "Message"
-8. take extra to from that created Repository liek this :
+8. take extra to from that created Repository like this :
  git branch -M main
 git remote add origin https://github.com/tofuuuuu0912-stack/e-commrece.git
 git push -u origin main

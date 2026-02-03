@@ -46,7 +46,7 @@ const Catagoery2 = () => {
             <img
               src={c.image}
               alt={c.description}
-              className="w-[150px] relative z-20"
+              className="w-37.5 relative z-20"
             />
           </div>
         </div>
