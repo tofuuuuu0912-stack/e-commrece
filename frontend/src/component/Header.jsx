@@ -1,5 +1,8 @@
+import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { TiShoppingCart } from "react-icons/ti";
+import { IoMdMenu } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const manulink = [
@@ -53,6 +56,8 @@ const quicklinks = [
 ];
 
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <div className="relative z-50 flex gap-8 px-3 sm:px-12 items-center justify-between bg-white">
       <div className="flex gap-10">
@@ -100,7 +105,29 @@ const Header = () => {
           />
         </div>
         <TiShoppingCart size={25} className="mr-4 sm:mr-0" />
+        <button className="sm:hidden" onClick={() => setOpenMenu(!openMenu)}>
+          {openMenu ? <IoCloseSharp /> : <IoMdMenu />}
+        </button>
       </div>
+
+      {openMenu && (
+        <div className=" absolute top-full left-0 w-full bg-white shadow-lg sm:hidden ">
+          <ul className="flex flex-col gap-4 p-6 font-semibold">
+          {manulink.map((item) => (
+            <li key={item.id}>
+              <Link
+                to={item.link}
+                onClick={() => setOpenMenu(false)}
+                className=" block hover:bg-red-500"
+              >
+                {item.lavel}
+              </Link>
+            </li>
+           
+          ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };

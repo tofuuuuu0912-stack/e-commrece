@@ -23,3 +23,14 @@ git push -u origin main
 13. if success then continue to Dashboard
 
 
+
+
+
+ How to clone other github project :
+
+ 1. Copy this project link from github
+ 2. Create folder on your pc and open that folder in vs code
+ 3. open the terminal and type : clone project-link 
+ 4. cd to that cloned project and type : npm i
+ 5. npm run dev :to verify
+
