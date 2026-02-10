@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
     <div className=" flex justify-center items-center min-h-screen  ">
@@ -6,16 +8,31 @@ const Login = () => {
         <div className=" mt-10 space-y-4">
           <div>
             <label className="text-xl font-semibold">Email</label>
-            <input type="text" placeholder="Enter Your Email" className="border p-2 w-full" />
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              className="border p-2 w-full"
+            />
           </div>
           <div>
-          <label className="text-xl font-semibold">Password </label>
-            <input type="password" placeholder="Enter Your Password" className="border w-full p-2" />
+            <label className="text-xl font-semibold">Password </label>
+            <input
+              type="password"
+              placeholder="Enter Your Password"
+              className="border w-full p-2"
+            />
           </div>
         </div>
         <div>
-            <button  className="bg-blue-500 w-full p-2 cursor-pointer rounded-xl  text-center ">Login</button>
-            <p className="justify-end flex cursor-pointer">Forgot password?</p>
+          <button className="bg-blue-500 w-full p-2 cursor-pointer rounded-xl  text-center ">
+            Login
+          </button>
+          <p className="justify-end flex cursor-pointer">Forgot password?</p>
+          <div className="flex gap-1"> 
+          <p> Don't have a account?</p>
+          <Link>Register</Link>
+
+          </div>
         </div>
       </div>
     </div>

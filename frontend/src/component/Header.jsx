@@ -4,6 +4,8 @@ import { TiShoppingCart } from "react-icons/ti";
 import { IoMdMenu } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { CgProfile } from "react-icons/cg";
+import Login from "./pages/Login";
 
 const manulink = [
   {
@@ -107,7 +109,12 @@ const Header = () => {
         <TiShoppingCart size={25} className="mr-4 sm:mr-0" />
         <button className="sm:hidden" onClick={() => setOpenMenu(!openMenu)}>
           {openMenu ? <IoCloseSharp /> : <IoMdMenu />}
+        
         </button>
+        <Link
+        to="/login" >
+           <CgProfile size={25}  />
+           </Link>
       </div>
 
       {openMenu && (
