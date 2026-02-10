@@ -17,6 +17,7 @@ import { FcAbout } from "react-icons/fc";
 import About from "./component/pages/About";
 import Contact from "./component/pages/Contact";
 import Login from "./component/pages/Login";
+import Register from "./component/pages/Register";
 
 const App = () => {
   return (
@@ -51,6 +52,7 @@ const App = () => {
             <Route path="/blogs" element={<News />} />
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/login" element={<Login/>} />
+            <Route path="/register" element={<Register/>} />
           </Routes>
         </div>
 
