@@ -18,6 +18,7 @@ import About from "./component/pages/About";
 import Contact from "./component/pages/Contact";
 import Login from "./component/pages/Login";
 import Register from "./component/pages/Register";
+import Shop from "./component/pages/Shop";
 
 const App = () => {
   return (
@@ -44,15 +45,15 @@ const App = () => {
               }
             />
 
-            <Route path="/shop" element={<Product />} />
+            <Route path="/shop" element={<Shop />} />
 
             <Route path="*" element={<NotFound />} />
             <Route path="/blogs" element={<News />} />
             <Route path="/about" element={<About />} />
             <Route path="/blogs" element={<News />} />
             <Route path="/contact-us" element={<Contact />} />
-            <Route path="/login" element={<Login/>} />
-            <Route path="/register" element={<Register/>} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
           </Routes>
         </div>
 

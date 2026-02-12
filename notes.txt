@@ -34,3 +34,10 @@ git push -u origin main
  4. cd to that cloned project and type : npm i
  5. npm run dev :to verify
 
+
+
+
+
+what is api
+how its works
+api in node js
